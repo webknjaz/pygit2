@@ -75,7 +75,7 @@ ARCH=`uname -m`
 # libgit2 needs cmake 2.8, which can be found in EPEL
 yum -y install \
     git libffi-devel \
-    openssl-devel pkgconfig \
+    zlib-devel pkgconfig \
     cmake28
 
 >&2 echo downloading source of libssh2 v${LIBSSH2_VERSION}:
