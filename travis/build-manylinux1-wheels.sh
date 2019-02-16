@@ -154,7 +154,7 @@ git ${GIT_GLOBAL_ARGS} clean -fxd --exclude dist/
 >&2 echo Running test suite against wheels:
 for PY_BIN in /opt/python/*/bin/python; do
     $PY_BIN -m pip install pytest
-    $PY_BIN -m pytest "${TESTS_DIR}" &
+    $PY_BIN -m pytest "${TESTS_DIR}" #&
 done
 wait
 
